@@ -1,0 +1,16 @@
+.color{
+    color: darkorange;
+}
+.bgColor{
+    background-color: #00B9E8;
+}
+.Border{
+    background-color: rgb(37, 228, 145);
+    height: 100px;
+    width: 100px;
+}
+.Border2{
+    background-color: #66FF00;
+    height: 100px;
+    width: 100px;
+}
