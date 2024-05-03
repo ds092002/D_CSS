@@ -108,3 +108,15 @@
   justify-content: center;
   align-items: center; /* Center text vertically */
 }
+
+body{
+  background-image: url('../../asset/pexels.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body:hover{
+  background-image: url('../../asset/sunset.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
