@@ -78,3 +78,9 @@
   width: 600px;
   object-fit: cover;
 }
+
+
+/* Hidden */
+.hidden{
+  visibility: hidden;
+}
