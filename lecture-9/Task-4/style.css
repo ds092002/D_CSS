@@ -1,15 +1,18 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 
 .container{
     display: grid;
     background-color: #fff;
     gap: 15px;
     grid-template-columns: auto auto auto ;
-    grid-template-rows: 50px 150px 150px 50px 50px;
+    grid-template-rows: 100px 150px 150px 100px;
     text-align: center;
+    background-color: #000;
+    color: #fff;
+    border: 15px solid black;
 }
 
 .item1{
