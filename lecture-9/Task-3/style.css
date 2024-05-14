@@ -35,13 +35,11 @@
 .item6{
     background-color: green;
     grid-row: 2/4;
+    grid-column: 4/5;
 }
 .item7{
     background-color: red;
 }
 .item8{
     background-color: goldenrod;
-}
-.item9{
-    background-color: green;
 }
