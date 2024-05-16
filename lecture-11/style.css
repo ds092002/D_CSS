@@ -84,11 +84,15 @@
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px blue;
+  color: white;
 }
 
 .head{
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px blue;
+  color: white;
 }
 
 .material-symbols-outlined {
