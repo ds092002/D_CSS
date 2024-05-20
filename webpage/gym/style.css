@@ -1,9 +1,122 @@
 *{
-    /* margin: 80; */
+    padding: 0;
+    margin: 0;
     font-family: 'Plain', sans-serif;
     box-sizing: border-box;
 }
 
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+/* Header */
+.headSection{
+    background-color: #171819;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+/* logo */
+.logo{
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.logo:hover{
+    color: #f13a11;
+    transform: 0.5s;
+}
+
+/* Nevbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .navbar_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar nav a{
+    color: #fff;
+    font-size: 10px;
+    padding: 0 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.navbar nav a:hover{
+    color: #f13a11;
+    transition: 0.5s;
+}
+
+/* Icon */
+.h_icon{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 11px;
+    transition: 0.5;
+}
+
+.facbook:hover{
+    color: #1877F2;
+    transition: 0.5s;
+}
+.twitter:hover{
+    color: #1DA1F2;
+    transition: 0.5s;
+}
+.insta:hover{
+    color: plum;
+    transition: 0.5s;
+}
+
+/* Baneer */
+.banner{
+    background-image: url(image/first_picture.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.banner h1, .banner h6, .banner a{
+    position: relative;
+    z-index: 2;
+}
+
+.banner h6{
+    color: #909090;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.banner h1{
+    font-size: 48px;
+    letter-spacing: -1px;
+    margin: 30px 0px 50px 0px;
+    font-weight: bold;
+}
+
+.banner::before{
+    content: "";
+    background-color: var(--dark-color);
+    opacity: 0.85;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/* Schedule */
 @media (min-width: 1200px) {
    .container {
         max-width: 1025px;

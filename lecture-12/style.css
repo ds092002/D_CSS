@@ -27,3 +27,14 @@
     /* background-clip: content-box; */
     /* background-clip: padding-box; */
 }
+
+.listing{
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    background-color: aquamarine;
+    /* list-style-type:decimal-leading-zero; */
+    /* list-style-image: url(../asset/Doremon.png); */
+    /* list-style-position: outside; */
+    list-style-position: inside;
+}
