@@ -107,7 +107,7 @@
 
 .banner::before{
     content: "";
-    background-color: var(--dark-color);
+    background-color: #171819;
     opacity: 0.85;
     height: 100%;
     width: 100%;
