@@ -116,6 +116,38 @@
     left: 0;
     z-index: 1;
 }
+
+.button1{
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 24px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.button1:hover{
+    color: #f13a11;
+    transition: 0.5s;
+}
+
+.button2{
+    color: #f13a11;
+    text-decoration: none;
+    padding: 14px 24px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border: 1px solid #f13a11;
+    transition: 0.5s;
+}
+
+.button2:hover{
+    color: #f13a11;
+    background: #fff;
+    transition: 0.5s;
+    border: 1px solid #fff;
+}
 /* Schedule */
 @media (min-width: 1200px) {
    .container {
