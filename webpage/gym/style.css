@@ -405,3 +405,98 @@ td {
 .aboutSection .strongTag{
     color: #fff;
 }
+
+.div_p_1, .div_p_3, .div_p_5{
+    margin-bottom: 16px;
+}
+
+.div_p_2, .div_p_4{
+    margin-bottom: 5px;
+}
+
+/* Testimonial CSS Start */
+.t_section{
+    background-color: #f9f9f9;
+    padding: 112px 0px;
+}
+.t_section .t_title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: -2px;
+}
+.t_section .paragraph, a{
+    color: #404040;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.t_section .t_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.t_section .t_img img{
+    max-width: 100%;
+}
+.t_section .t_div1{
+    padding: 0px 15px;
+    margin: 0px 24px;
+    align-self: center;
+}
+.t_section .t_div2{
+    padding: 0px 15px;
+    margin: 0px 0px 0px 24px;
+    align-self: center;
+}
+.t_section .t_div3{
+    padding: 0px 15px;
+    margin: 0px 24px 0px 0px;
+    align-self: center;
+}
+.t_section .t_div1 .paragraph{
+    margin-bottom: 16px;
+}
+.t_section .t_info {
+    background: #fff;
+    border-radius: 0 0 2px 2px;
+    box-shadow: 6px 0 38px rgba(20, 20, 20, 0.10);
+    padding: 20px;
+    position: relative;
+}
+.t_section .t_info h3{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    letter-spacing: -1px;
+}
+.t_section .t_info .position{
+    font-size: 16px;
+    color: #212529;
+    opacity: 0.85;
+}
+.t_section .t_info .t_icon{
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.t_section .t_info .t_icon li a i{
+    color: #666262;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 6px 10px;
+    transition: 0.5s;
+}
+.facbook_t:hover{
+    color: #1877F2;
+    transition: 0.5s;
+}
+.twitter_t:hover{
+    color: #1DA1F2;
+    transition: 0.5s;
+}
+.insta_t:hover{
+    color: plum;
+    transition: 0.5s;
+}
