@@ -44,7 +44,7 @@
 }
 .navbar nav a{
     color: #fff;
-    font-size: 10px;
+    font-size: 15px;
     padding: 0 20px;
     text-decoration: none;
     transition: 0.5s;
@@ -96,11 +96,12 @@
     color: #909090;
     font-weight: 500;
     font-size: 20px;
+    letter-spacing: 1px;
 }
 
 .banner h1{
     font-size: 48px;
-    letter-spacing: -1px;
+    letter-spacing: -3px;
     margin: 30px 0px 50px 0px;
     font-weight: bold;
 }
@@ -326,5 +327,81 @@ td {
 .schedule-table tr td:first-child {
     background: #f13a11;
     border: 1px solid #212122;
-    color: var(--white-color);
+    color: #fff;
+}
+
+
+/* About  */
+.aboutSection{
+    background-color: #171819;
+    padding: 80px 0px;
+}
+.aboutFlex{
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+.aboutSection .div1{
+    width: 45%; 
+    margin-right: 50px;
+}
+.aboutSection .div2{
+    padding-left: 56px;
+}
+.aboutSection .innerdiv{
+    border-left: 2px solid #ffffff0d;
+    padding-left: 56px;
+}
+.aboutSection h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    letter-spacing: -2px;
+}
+.aboutSection h6{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    line-height: 1.5em;
+}
+.aboutSection .aboutParagraph{
+    margin-bottom: 40px;
+}
+.aboutSection .aboutParagraph .paraSpan{
+    color: #404040;
+    transition: 0.5s;
+}
+.paragraph{
+    color: #666262;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.aboutSection .aboutParagraph .paraSpan:hover{
+    color: #f13a11;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.aboutSection .buttonAbout{
+    background-color: #f13a11;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    padding: 14px 102px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.aboutSection .buttonAbout:hover{
+    color: #f13a11;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.aboutSection .strongTag{
+    color: #fff;
 }
