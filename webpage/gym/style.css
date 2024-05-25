@@ -451,15 +451,18 @@ td {
     margin: 6px 10px;
     transition: 0.5s;
 }
-.facbook_t:hover{
-    color: #1877F2;
+
+.fa-facebook-f:hover{
+    color: #1877F2 !important;
     transition: 0.5s;
 }
-.twitter_t:hover{
-    color: #1DA1F2;
+
+.fa-instagram:hover{
+    color: rgb(247, 71, 247) !important;
     transition: 0.5s;
 }
-.insta_t:hover{
-    color: plum;
+
+.fa-twitter:hover{
+    color: #1DA1F2 !important;
     transition: 0.5s;
 }

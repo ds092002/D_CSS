@@ -1,0 +1,105 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 50px;
+  }
+  
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #20B2AA;
+    min-height: 100vh;
+    padding: 10px;
+    
+  }
+  
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 85%;
+    margin: auto;
+    gap: 4%;
+    background-color: antiquewhite;
+  }
+  
+  .one{
+    background-color: #fff;
+    color: black;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px black;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .two{
+    background-color: #fff;
+    color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .three{
+    background-color: #fff;
+    color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .four{
+    background-color: #fff;
+    color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .five{
+    background-color: #fff;
+    color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .six{
+    background-color: #fff;
+    color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
