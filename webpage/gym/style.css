@@ -81,7 +81,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 200px 0;
+    padding: 250px;
     text-align: center;
     color: #fff;
     position: relative;
@@ -295,44 +295,44 @@ td {
 
 
 /* About  */
-.aboutSection{
+.heroSection{
     background-color: #171819;
     padding: 80px 0px;
 }
-.aboutFlex{
+.heroFlex{
     display: flex;
     width: 60%;
     margin: auto;
 }
-.aboutSection .div1{
+.heroSection .div1{
     width: 45%; 
     margin-right: 50px;
 }
-.aboutSection .div2{
+.heroSection .div2{
     padding-left: 56px;
 }
-.aboutSection .innerdiv{
+.heroSection .innerdiv{
     border-left: 2px solid #ffffff0d;
     padding-left: 56px;
 }
-.aboutSection h2{
+.heroSection h2{
     color: #fff;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 16px;
     letter-spacing: -2px;
 }
-.aboutSection h6{
+.heroSection h6{
     color: #fff;
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 24px;
     line-height: 1.5em;
 }
-.aboutSection .aboutParagraph{
+.heroSection .aboutParagraph{
     margin-bottom: 40px;
 }
-.aboutSection .aboutParagraph .paraSpan{
+.heroSection .aboutParagraph .paraSpan{
     color: #404040;
     transition: 0.5s;
 }
@@ -342,12 +342,12 @@ td {
     font-weight: 300;
     line-height: 1.5em;
 }
-.aboutSection .aboutParagraph .paraSpan:hover{
+.heroSection .aboutParagraph .paraSpan:hover{
     color: #f13a11;
     cursor: pointer;
     transition: 0.5s;
 }
-.aboutSection .buttonAbout{
+.heroSection .buttonAbout{
     background-color: #f13a11;
     color: #fff;
     text-decoration: none;
@@ -360,12 +360,12 @@ td {
     border-radius: 2px;
     transition: 0.5s;
 }
-.aboutSection .buttonAbout:hover{
+.heroSection .buttonAbout:hover{
     color: #f13a11;
     background-color: #fff;
     transition: 0.5s;
 }
-.aboutSection .strongTag{
+.heroSection .strongTag{
     color: #fff;
 }
 
@@ -378,73 +378,73 @@ td {
 }
 
 /* Testimonial CSS Start */
-.t_section{
+.a_section{
     background-color: #f9f9f9;
     padding: 112px 0px;
 }
-.t_section .t_title{
+.a_section .a_title{
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 1.5rem;
     letter-spacing: -2px;
 }
-.t_section .paragraph, a{
+.a_section .paragraph, a{
     color: #404040;
     text-decoration: none;
     font-weight: 600;
     transition: 0.5s;
 }
-.t_section .t_flex{
+.a_section .a_flex{
     display: flex;
     justify-content: space-between;
 }
-.t_section .t_img img{
+.a_section .a_img img{
     max-width: 100%;
 }
-.t_section .t_div1{
+.a_section .a_div1{
     padding: 0px 15px;
     margin: 0px 24px;
     align-self: center;
 }
-.t_section .t_div2{
+.a_section .a_div2{
     padding: 0px 15px;
     margin: 0px 0px 0px 24px;
     align-self: center;
 }
-.t_section .t_div3{
+.a_section .a_div3{
     padding: 0px 15px;
     margin: 0px 24px 0px 0px;
     align-self: center;
 }
-.t_section .t_div1 .paragraph{
+.a_section .a_div1 .paragraph{
     margin-bottom: 16px;
 }
-.t_section .t_info {
+.a_section .a_info {
     background: #fff;
     border-radius: 0 0 2px 2px;
     box-shadow: 6px 0 38px rgba(20, 20, 20, 0.10);
     padding: 20px;
     position: relative;
 }
-.t_section .t_info h3{
+.a_section .a_info h3{
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 3px;
     letter-spacing: -1px;
 }
-.t_section .t_info .position{
+.a_section .a_info .position{
     font-size: 16px;
     color: #212529;
     opacity: 0.85;
 }
-.t_section .t_info .t_icon{
+.a_section .a_info .a_icon{
     padding: 0;
     list-style-type: none;
     position: absolute;
     top: 20px;
     right: 20px;
 }
-.t_section .t_info .t_icon li a i{
+.a_section .a_info .a_icon li a i{
     color: #666262;
     font-size: 18px;
     font-weight: 600;
