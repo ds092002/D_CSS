@@ -3,6 +3,7 @@
   margin: 0;
   font-family: "Plain", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -57,7 +58,9 @@
   color: #f13a11;
   transition: 0.5s;
 }
-
+.navbar nav a:active{
+  color: royalblue;
+}
 /* Icon */
 .h_icon {
   color: #fff;
@@ -85,9 +88,9 @@
 .banner {
   background-image: url(image/first_picture.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
-  padding: 250px;
+  padding: 350px;
   text-align: center;
   color: #fff;
   position: relative;
