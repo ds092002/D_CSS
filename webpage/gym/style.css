@@ -76,10 +76,10 @@ nav ul li a{
   left: 0;
 }
 
-.icons{
-  display: inline;
-  line-height: 50px !important;
-  color: #fff;
+.social-icon{
+  position: relative;
+  margin: 5px 0px 0px 16px;
+  padding: 0;
 }
 @media (max-width: 400px) {
   label.logo{
@@ -89,25 +89,22 @@ nav ul li a{
   }
 }
 
-@media (max-width: 895px){
+@media (max-width: 991px){
   label.logo{
     text-wrap: nowrap;
-    margin: 0 50px;
+    margin: 0 30px;
   }
   #checkbtn{
     display: block;
   }
   nav ul{
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background-color: #000;
     position: fixed;
     top: 80px;
     left: -100%;
     transition: 0.4s;
-    .icons{
-      display: inline;
-    }
   }
   nav ul li{
     display: block;
@@ -409,6 +406,10 @@ nav ul li a{
     border-left: none;
     padding-left: 0;
   }
+  .div2{
+    margin-top: 10px;
+    padding: 22px 0px 0px;
+  }
 }
 
 /* For devices with a max-width of 425px */
@@ -432,6 +433,10 @@ nav ul li a{
   .heroSection .buttonAbout {
     padding: 12px 50px;
     font-size: 12px;
+  }
+  .div2{
+    margin-top: 10px;
+    padding: 22px 0px 0px;
   }
 }
 
@@ -457,6 +462,10 @@ nav ul li a{
     padding: 14px 24px;
     font-size: 14px;
     margin: 16px 0px 0px;
+  }
+  .div2{
+    margin-top: 10px;
+    padding: 22px 0px 0px;
   }
 }
 
