@@ -434,6 +434,12 @@ nav ul li a{
     margin: 0;
     padding-left: 0;
   }
+  .heroSection .aboutParagraph {
+    margin: 0px 0px 16px;
+  }
+  .headSection .buttonAbout{
+    padding: 12px 50px;
+  }
 
   .heroSection .innerdiv {
     border-left: none;
@@ -464,7 +470,7 @@ nav ul li a{
   }
 
   .heroSection .buttonAbout {
-    padding: 12px 50px;
+    padding: 12px 5%;
     font-size: 12px;
   }
   .div2{
@@ -582,6 +588,7 @@ a {
   font-size: 28px;
   font-weight: bold;
   letter-spacing: -1px;
+  color: #212529;
 }
 
 .a_section .a_info .a_icon li a i {
@@ -636,6 +643,7 @@ a {
   }
   .a_section .a_img {
     max-width: 320px;
+    margin-top: 20px ;
   }
   .a_section .a_div2,
   .a_section .a_div3 {
@@ -667,10 +675,15 @@ a {
   }
   .a_section .a_flex {
     display: block;
+    /* text-align: center; */
   }
   .a_section .a_img {
     width: 100%;
-    
+    margin: 0 auto;
+  }
+  .a_info{
+    width: 100%;
+    margin: 0 auto;
   }
   .a_section .a_div1,
   .a_section .a_div2,
@@ -679,7 +692,7 @@ a {
   }
   .a_info h3 {
     font-size: 28px;
-    padding: 20px;
+    /* padding: 20px; */
   }
 }
 
@@ -738,6 +751,7 @@ a {
 .classes .classes_pricing {
   display: flex;
   justify-content: space-between;
+  /* flex-wrap: wrap; */
 }
 
 .classes .classes_info img {
@@ -756,6 +770,7 @@ a {
   background: #fff;
   box-shadow: 6px 0 38px rgba(20, 20, 20, 0.1);
   border-radius: 0 0 2px 2px;
+  color: #212529;
 }
 
 .classes .classes_info .c_p_inner_info h3 {
@@ -792,13 +807,54 @@ a {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .classes {
+    padding: 80px 0px;
+  }
+  .classes .classes_pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 15px;
+  }
+  .classes .classes_info {
+    margin: 15px 0px;
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .classes {
+    padding: 80px 0px;
+  }
+  .classes .classes_pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .classes .classes_info {
+    margin: 15px 0px;
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
 @media (max-width: 320px) {
   .classes {
     padding: 80px 0px;
   }
-
-  
+  .classes .classes_pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .classes .classes_info {
+    margin: 15px 0px;
+    width: 100%;
+  }
 }
+
+
 /* Schedule */
 @media (min-width: 1200px) {
   .container {
