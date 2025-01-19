@@ -856,205 +856,335 @@ a {
 
 
 /* Schedule */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1025px;
-  }
-}
-
-.col-12 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
+/* General Styles */
 .schedule {
   background-color: #171819;
-}
-
-.section {
   padding: 112px 0;
 }
 
-section {
-  display: block;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
 .text-center {
-  text-align: center !important;
-}
-
-.col-12,
-.col-lg-12,
-.col-md-12 {
-  position: relative;
-  width: 100px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-h6 {
-  color: #909090;
-  font-size: 22px;
-  line-height: inherit;
-  margin: 0;
+  text-align: center;
 }
 
 .text-white {
   color: #fff !important;
 }
 
+h6 {
+  color: #909090;
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
 h2 {
   font-size: 36px;
   font-weight: bold;
-  letter-spacing: -2px;
-  margin-bottom: 0.5rem;
-  line-height: normal;
+  margin-bottom: 1.5rem;
 }
 
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.py-5 {
-  padding-bottom: 3rem !important;
+/* Table Styles */
+/* General Styles */
+.schedule {
+  background-color: #171819;
+  padding: 80px 0;
 }
 
-.schedule-table {
-  display: block;
-  text-align: center;
-  border: 0;
-  border-bottom: 0;
-  /* text-transform: uppercase; */
+.text-white {
+  color: #fff !important;
 }
 
+h6 {
+  color: #bdbdbd;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Table Styles */
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.table-container {
+  background-color: #171819;
+  padding: 20px;
+}
+
+.schedule {
+  background-color: #171819;
+  padding: 80px 0;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+h6 {
+  color: #bdbdbd;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Table Styles */
 .table-responsive {
   width: 100%;
   overflow-x: auto;
 }
 
 .table {
-  margin-bottom: 1rem;
-  background-color: transparent;
-}
-
-table {
+  width: 100%;
   border-collapse: collapse;
-  text-indent: initial;
-  border-spacing: 2px;
-}
-
-.table,
-.thead-light th {
-  background: #f13a11;
+  margin-bottom: 1rem;
   color: #fff;
-  border: 1px solid black;
 }
 
-.table thead th {
-  vertical-align: bottom;
+.table-bordered {
+  border: 1px solid #212121;
 }
 
-.table th {
-  padding: 1rem;
+.schedule-table th,
+.schedule-table td {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  vertical-align: middle;
 }
 
-th {
-  text-align: inherit;
-  display: table-cell;
+.schedule-table th {
+  background: #e74c3c;
+  color: #fff;
   font-weight: bold;
-  background-color: #000;
+}
+
+.schedule-table td {
+  background: #292929;
+}
+
+.schedule-table td:first-child {
+  background: #e74c3c;
+  color: #fff;
+  font-weight: bold;
 }
 
 .schedule-table span {
-  color: gray;
-  font-size: 14px;
-  display: block;
+  font-size: 12px;
+  color: #bdbdbd;
 }
 
-.table td {
-  padding: 1rem;
-  vertical-align: top;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .schedule-table th,
+  .schedule-table td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
 }
 
-.table-bordered td,
-.table-bordered th {
-  border: 1px solid #212122;
+
+
+/* Map */
+/* Base Styles */
+.m_section {
+  padding: 80px 20px; /* Add padding for spacing */
+  text-align: center; /* Center-align text and map */
+  background-color: #f9f9f9; /* Optional: Add a light background */
 }
 
-td {
-  display: table-cell;
-  unicode-bidi: isolate;
-  background-color: #171819;
+.m_section .m_title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
 }
 
-.schedule-table tr td:first-child {
-  background: #f13a11;
-  border: 1px solid #212122;
-  color: #fff;
+.m_section .paragraph {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the text */
+  gap: 10px; /* Space between icon and text */
+}
+
+.m_section .paragraph i {
+  color: #f13a11; /* Highlight the location icon */
+}
+
+/* Map Styling */
+.m_section iframe {
+  width: 100%; /* Make the map responsive */
+  height: 450px; /* Set a default height */
+  border: 0;
+  border-radius: 8px; /* Add rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .m_section {
+    padding: 60px 15px; /* Reduce padding for smaller screens */
+  }
+
+  .m_section .m_title {
+    font-size: 28px; /* Adjust title size */
+    margin-bottom: 0.8rem;
+  }
+
+  .m_section .paragraph {
+    font-size: 16px; /* Adjust text size for smaller screens */
+    line-height: 1.4; /* Improve readability */
+  }
+
+  .m_section iframe {
+    height: 350px; /* Adjust map height */
+  }
+}
+
+@media (max-width: 480px) {
+  .m_section {
+    padding: 40px 10px; /* Further reduce padding for very small screens */
+  }
+
+  .m_section .m_title {
+    font-size: 24px; /* Reduce title size further */
+  }
+
+  .m_section .paragraph {
+    font-size: 14px; /* Adjust text size */
+  }
+
+  .m_section iframe {
+    height: 250px; /* Adjust map height for small devices */
+  }
 }
 
 
 /* Conatct */
 .contact_section {
-  padding: 112px 0px;
+  padding: 112px 20px; /* Add side padding for smaller screens */
+  /* background-color: #f9f9f9; Optional: Light background for better visibility */
 }
 
-.contact_section .c_title,
-.m_section .m_title {
+.contact_section .c_title {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 1.5rem;
   letter-spacing: -2px;
+  color: #333;
 }
 
-.contact_section .form .form_btn:hover {
-  background-color: #f13a11;
-  color: white;
-  border: 1px solid #f13a11;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.contact_section .form input {
-  height: calc(2.25rem + 20px);
+.contact_section .form {
+  max-width: 600px; /* Restrict the form width */
+  margin: 0 auto; /* Center the form */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add consistent spacing between inputs */
 }
 
 .contact_section .form input,
 .contact_section .form textarea {
   display: block;
   width: 100%;
-  padding: 6px 12px;
-  margin: 20px 0px;
+  padding: 10px 15px;
   font-weight: 400;
   font-size: 16px;
   background-color: #fff;
   color: #495057;
   border: 1px solid #ced4da;
-  border-radius: 2px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better focus */
+}
+
+.contact_section .form input:focus,
+.contact_section .form textarea:focus {
+  outline: none;
+  border-color: #f13a11;
+  box-shadow: 0 0 6px rgba(241, 58, 17, 0.5); /* Glow effect on focus */
+}
+
+.contact_section .form textarea {
+  resize: none; /* Disable resizing */
 }
 
 .contact_section .form .form_btn {
   background-color: #171819;
   color: white;
   border: 1px solid #171819;
-  transition: 0.5s;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
+
+.contact_section .form .form_btn:hover {
+  background-color: #f13a11;
+  color: white;
+  border: 1px solid #f13a11;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact_section {
+    padding: 80px 15px; /* Reduce padding for smaller screens */
+  }
+
+  .contact_section .c_title {
+    font-size: 28px; /* Adjust title size */
+    margin-bottom: 1rem;
+  }
+
+  .contact_section .form {
+    width: 100%; /* Ensure the form takes up the full width */
+    padding: 0 10px; /* Add internal padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact_section {
+    padding: 60px 10px; /* Further reduce padding for very small screens */
+  }
+
+  .contact_section .c_title {
+    font-size: 24px; /* Reduce title size further */
+  }
+
+  .contact_section .form input,
+  .contact_section .form textarea {
+    font-size: 14px; /* Adjust font size for smaller inputs */
+    padding: 8px 10px;
+  }
+
+  .contact_section .form .form_btn {
+    font-size: 14px; /* Adjust button size */
+    padding: 8px 15px;
+  }
+}
+
 
 /* Map */
 .m_section {
@@ -1071,26 +1201,66 @@ td {
   text-align: center;
 }
 
-/* Footer */
 .main_footer {
-  padding: 50px 0px;
+  padding: 50px 20px; /* Added side padding for smaller screens */
+  /* background-color: #f9f9f9; Optional: Light background color for better visibility */
 }
 
 .inner_footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 20px; /* Space between items for better appearance */
 }
 
-.f_contact .paragraph i {
-  margin-right: 5px;
-  color: #f13a11;
-}
-
-.f_contact p.paragraph {
-  margin-right: 35px;
+.inner_footer > div {
+  flex: 1; /* Each section takes up equal space */
+  min-width: 250px; /* Prevents items from getting too narrow */
+  text-align: center; /* Center-align text on smaller screens */
 }
 
 .f_contact {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Stack items vertically by default */
+  align-items: center;
+  gap: 10px; /* Space between items */
 }
+
+.f_contact .paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.f_contact .paragraph i {
+  margin-right: 8px;
+  color: #f13a11;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .inner_footer {
+    flex-wrap: nowrap; /* Prevent wrapping on medium screens and up */
+  }
+
+  .f_contact {
+    flex-direction: row; /* Align items horizontally */
+    justify-content: center;
+    gap: 35px;
+  }
+
+  .inner_footer > div {
+    text-align: left; /* Align text to the left for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .main_footer {
+    padding: 50px 50px; /* Increased padding for larger screens */
+  }
+
+  .inner_footer {
+    gap: 40px; /* Add more spacing between sections */
+  }
+}
+
