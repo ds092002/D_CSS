@@ -56,11 +56,6 @@
     display: block;
 }
 
-@media (max-width: 1400px) {
-    .box6{
-        /* display: none; */
-    }
-}
 @media (max-width: 1200px) {
     .box6{
         display: none;

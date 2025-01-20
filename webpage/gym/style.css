@@ -5,6 +5,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.container {
+  /* remember to set a width */
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /* Header */
 .headSection {
@@ -939,17 +944,18 @@ h2 {
   text-align: center;
   border: 0;
   border-bottom: 0;
-  /* text-transform: uppercase; */
 }
 
 .table-responsive {
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
 }
 
 .table {
   margin-bottom: 1rem;
   background-color: transparent;
+  width: 100%;
 }
 
 table {
@@ -1008,8 +1014,79 @@ td {
   color: #fff;
 }
 
+/* Responsive Design */
 
-/* Conatct */
+/* Adjust for screens up to 1200px (large tablets or small laptops) */
+@media (max-width: 1200px) {
+  .schedule-table {
+    font-size: 14px;
+  }
+}
+
+/* Medium Screens (tablets) */
+@media (max-width: 992px) {
+  .schedule-table th, .schedule-table td {
+    padding: 0.75rem;
+  }
+  .schedule-table {
+    font-size: 12px;
+  }
+}
+
+/* Small Screens (phones) */
+@media (max-width: 768px) {
+  .schedule-table {
+    font-size: 12px;
+  }
+  .schedule-table th, .schedule-table td {
+    padding: 0.5rem;
+  }
+  
+  /* Make the entire table horizontally scrollable */
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  }
+
+  /* Stack rows vertically in mobile */
+  .schedule-table thead {
+    display: block;
+  }
+
+  .schedule-table tr {
+    display: inline-block;
+    min-width: 600px;
+    vertical-align: top;
+  }
+
+  .schedule-table td {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #171819;
+    text-align: left;
+    padding: 0.75rem;
+    border-top: 1px solid #212122;
+  }
+
+  .schedule-table td:first-child {
+    background: #f13a11;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 0.5rem;
+  }
+  
+  /* Add labels for each cell on mobile (makes it easier to read) */
+  .schedule-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #f13a11;
+    padding-right: 0.5rem;
+  }
+}
+
+
+/* General Contact Section Styles */
 .contact_section {
   padding: 112px 0px;
 }
@@ -1056,7 +1133,7 @@ td {
   transition: 0.5s;
 }
 
-/* Map */
+/* Map Section */
 .m_section {
   border-bottom: 1px solid #efebeb;
   padding-bottom: 80px;
@@ -1093,4 +1170,145 @@ td {
 .f_contact {
   display: flex;
   justify-content: space-between;
+}
+
+/* Mobile and Tablet Responsiveness */
+
+/* Small Tablets or Larger Mobile Screens */
+@media (max-width: 992px) {
+  .contact_section {
+    padding: 80px 0;
+  }
+
+  .contact_section .c_title,
+  .m_section .m_title {
+    font-size: 30px;
+  }
+
+  .contact_section .form input,
+  .contact_section .form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact_section .form .form_btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .m_section .paragraph {
+    margin-bottom: 30px;
+  }
+
+  .main_footer {
+    padding: 40px 0;
+  }
+
+  .inner_footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .f_contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .f_contact p.paragraph {
+    margin-right: 0;
+  }
+}
+
+/* Mobile Screens (up to 768px) */
+@media (max-width: 768px) {
+  .contact_section {
+    padding: 60px 0;
+  }
+
+  .contact_section .c_title,
+  .m_section .m_title {
+    font-size: 26px;
+  }
+
+  .contact_section .form input,
+  .contact_section .form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact_section .form .form_btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .m_section .paragraph {
+    margin-bottom: 25px;
+  }
+
+  .inner_footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .f_contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .f_contact p.paragraph {
+    margin-right: 0;
+  }
+
+  /* Map section - reduce padding and font size for mobile */
+  .m_section {
+    padding-bottom: 60px;
+  }
+}
+
+/* Small Mobile Screens (up to 480px) */
+@media (max-width: 480px) {
+  .contact_section {
+    padding: 50px 0;
+  }
+
+  .contact_section .c_title,
+  .m_section .m_title {
+    font-size: 22px;
+  }
+
+  .contact_section .form input,
+  .contact_section .form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contact_section .form .form_btn {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .main_footer {
+    padding: 30px 0;
+  }
+
+  .inner_footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .f_contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .f_contact p.paragraph {
+    margin-right: 0;
+  }
+
+  .m_section .paragraph {
+    margin-bottom: 20px;
+  }
 }
