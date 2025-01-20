@@ -5,11 +5,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-.container {
-  /* remember to set a width */
-  margin-right: auto;
-  margin-left: auto;
-}
 
 /* Header */
 .headSection {
@@ -21,7 +16,7 @@
 
 }
 
-/* logo */
+/* Logo Styling */
 label.logo {
   color: #fff;
   font-size: 30px;
@@ -30,7 +25,7 @@ label.logo {
   transition: 0.5s;
   margin: 0 100px;
   line-height: 50px;
-  float: left
+  float: left;
 }
 
 .logo:hover {
@@ -38,33 +33,39 @@ label.logo {
   transform: 0.5s;
 }
 
-/* Nevbar */
-nav ul{
+/* Navbar Styling */
+nav ul {
   float: right;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   line-height: 50px;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: #fff;
   text-transform: capitalize;
   font-size: 15px;
   padding: 8px 20px;
+  display: inline-block;
 }
+
 .navbar nav a.active {
   color: #f13a11;
   transition: 0.5s;
 }
-.navbar nav a:hover{
+
+.navbar nav a:hover {
   color: #f13a11;
 }
 
-#checkbtn{
+/* Hamburger Menu */
+#checkbtn {
   float: right;
   line-height: 50px;
   margin-right: 10px;
@@ -73,57 +74,167 @@ nav ul li a{
   display: none;
 }
 
-#check{
+#check {
   display: none;
 }
 
-#check:checked ~ ul{
+#check:checked ~ ul {
   left: 0;
 }
 
-.social-icon{
+/* Social Icon Styles */
+.social-icon {
   position: relative;
   gap: -1px !important;
   left: 4px;
 }
-@media (max-width: 400px) {
-  label.logo{
-    text-wrap: nowrap;
-    font-size: 25px;
-    margin: 0 50px;
-  }
+
+.social-icon li {
+  display: inline;
 }
 
-@media (max-width: 1024px){
-  label.logo{
-    text-wrap: nowrap;
+.social-icon li a {
+  color: #fff;
+  font-size: 16px; /* Smaller font size for social icons */
+  margin: 0 5px; /* Decreased space between icons */
+  padding: 0;
+}
+
+.social-icon li a:hover {
+  color: #f13a11;
+  transition: 0.5s;
+}
+
+.navbar nav ul li a {
+  color: white; /* Default color */
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 8px 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: #f13a11; /* Change color when hovering */
+}
+
+.navbar nav ul li a.active {
+  color: #f13a11; /* Active link color */
+}
+
+
+/* Responsive Styling for max-width: 1024px (Tablets) */
+@media (max-width: 1024px) {
+  label.logo {
+    font-size: 25px;
     margin: 0 30px;
   }
-  nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 2px 7px;
-    line-height: 50px;
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 6px 15px;
   }
-  nav ul li{
+
+  nav ul li {
     display: inline;
     text-align: center;
     line-height: 40px;
     margin: 5px;
   }
+
+  .social-icon li a {
+    font-size: 15px;
+    margin: 0 5px;
+  }
+
+  /* Ensure nav bar stays in a row layout, not stacked */
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Remove inline-block style on the list items */
+  nav ul li {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  /* Hide hamburger on tablets */
+  #checkbtn {
+    display: none;
+  }
 }
 
-@media (max-width: 991px){
-  label.logo{
-    text-wrap: nowrap;
+/* Responsive Styling for max-width: 991px (Small devices) */
+@media (max-width: 991px) {
+  label.logo {
+    font-size: 25px;
     margin: 0 30px;
   }
-  #checkbtn{
+
+  #checkbtn {
     display: block;
   }
-  nav ul{
+
+  nav ul {
+    width: 100%;
+    height: ;
+    background-color: #000;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column; /* Stack vertically for smaller screens */
+    align-items: center;  /* Center content */
+    padding: 20px 0;  /* Add some padding */
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* For smaller screens (Mobile Devices) */
+@media (max-width: 768px) {
+  label.logo {
+    font-size: 22px;
+    margin: 0 20px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .social-icon li a {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 8px;
+  }
+
+  #checkbtn {
+    display: block;
+  }
+
+  nav ul {
     width: 100%;
     height: 50vh;
     background-color: #000;
@@ -132,48 +243,20 @@ nav ul li a{
     left: -100%;
     transition: 0.4s;
   }
-  nav ul li{
-    display: block;
-    text-align: center;
-    line-height: 40px;
-    margin: 10px;
+
+  #check:checked ~ ul {
+    left: 0;
   }
-
-  .icons{
-    display: inline;
-  }
+  
 }
 
-/* Icon */
-.h_icon {
-  color: #fff;
-  font-size: 18px;
-  padding: 0 11px;
-  transition: 0.5;
-}
-
-.facbook:hover {
-  color: #1877f2;
-  transition: 0.5s;
-}
-
-.twitter:hover {
-  color: #1da1f2;
-  transition: 0.5s;
-}
-
-.insta:hover {
-  color: plum;
-  transition: 0.5s;
-}
-
-/* Baneer */
+/* Banner */
 .banner {
   background-image: url(image/first_picture.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 350px;
+  padding: 350px 20px; /* Adjust padding for responsiveness */
   text-align: center;
   color: #fff;
   position: relative;
@@ -244,11 +327,10 @@ nav ul li a{
   border: 1px solid #fff;
 }
 
-
-
+/* For devices with a max-width of 768px (tablets and small screens) */
 @media (max-width: 768px) {
   .banner {
-    padding: 320px 40px;
+    padding: 250px 40px; /* Reduced padding for smaller screens */
   }
   
   .banner h6 {
@@ -257,34 +339,32 @@ nav ul li a{
   }
   
   .banner h1 {
-    font-size: 48px;
+    font-size: 40px; /* Reduced font size for better readability */
     margin: 20px 0px 30px 0px;
   }
 
   .button1,
   .button2 {
     font-size: 14px;
-    padding: 14px 24px;
+    padding: 12px 20px; /* Adjusted padding for buttons */
     margin: 16px 0px 0px;
   }
 }
 
+/* For devices with a max-width of 425px (smaller phones) */
 @media (max-width: 425px) {
   .banner {
-    padding: 290px 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    padding: 180px 20px; /* Adjusted padding for even smaller screens */
   }
 
   .banner h1 {
-    font-size: 38px;
+    font-size: 32px; /* Adjusted font size */
     margin: 20px 0px;
     font-weight: bold;
   }
 
   .banner h6 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .button1, .button2 {
@@ -293,17 +373,18 @@ nav ul li a{
   }
 }
 
+/* For devices with a max-width of 320px (very small phones) */
 @media (max-width: 320px) {
   .banner {
-    padding: 150px 20px;
+    padding: 120px 20px; /* Further reduced padding */
   }
   
   .banner h6 {
-    font-size: 16px;
+    font-size: 16px; /* Reduced font size */
   }
   
   .banner h1 {
-    font-size: 32px;
+    font-size: 28px; /* Further reduced font size */
     margin: 20px 0px 30px 0px;
   }
 
@@ -313,6 +394,7 @@ nav ul li a{
     padding: 10px 18px;
   }
 }
+
 
 
 .heroSection {
@@ -565,7 +647,7 @@ a {
   margin: 0px 0px 0px 24px;
   padding: 0px 15px;
   align-self: center;
-  flex: 1 1 95%;
+  /* flex: 1 1; */
 }
 
 .a_section .a_div3 {
@@ -697,7 +779,7 @@ a {
   }
   .a_info h3 {
     font-size: 28px;
-    /* padding: 20px; */
+    padding: 20px;
   }
 }
 
@@ -965,28 +1047,22 @@ h2 {
   border: 1px solid #212121;
 }
 
-.schedule-table {
-  display: block;
+.schedule-table th,
+.schedule-table td {
   text-align: center;
-  border: 0;
-  border-bottom: 0;
-  /* text-transform: uppercase; */
+  padding: 15px;
+  font-size: 14px;
+  vertical-align: middle;
 }
 
-.table-responsive {
-  width: 100%;
-  overflow-x: auto;
+.schedule-table th {
+  background: #e74c3c;
+  color: #fff;
+  font-weight: bold;
 }
 
-.table {
-  margin-bottom: 1rem;
-  background-color: transparent;
-}
-
-table {
-  border-collapse: collapse;
-  text-indent: initial;
-  border-spacing: 2px;
+.schedule-table td {
+  background: #292929;
 }
 
 .schedule-table td:first-child {
@@ -1092,79 +1168,8 @@ table {
   }
 }
 
-/* Responsive Design */
 
-/* Adjust for screens up to 1200px (large tablets or small laptops) */
-@media (max-width: 1200px) {
-  .schedule-table {
-    font-size: 14px;
-  }
-}
-
-/* Medium Screens (tablets) */
-@media (max-width: 992px) {
-  .schedule-table th, .schedule-table td {
-    padding: 0.75rem;
-  }
-  .schedule-table {
-    font-size: 12px;
-  }
-}
-
-/* Small Screens (phones) */
-@media (max-width: 768px) {
-  .schedule-table {
-    font-size: 12px;
-  }
-  .schedule-table th, .schedule-table td {
-    padding: 0.5rem;
-  }
-  
-  /* Make the entire table horizontally scrollable */
-  .table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
-  }
-
-  /* Stack rows vertically in mobile */
-  .schedule-table thead {
-    display: block;
-  }
-
-  .schedule-table tr {
-    display: inline-block;
-    min-width: 600px;
-    vertical-align: top;
-  }
-
-  .schedule-table td {
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #171819;
-    text-align: left;
-    padding: 0.75rem;
-    border-top: 1px solid #212122;
-  }
-
-  .schedule-table td:first-child {
-    background: #f13a11;
-    color: #fff;
-    font-weight: bold;
-    padding-top: 0.5rem;
-  }
-  
-  /* Add labels for each cell on mobile (makes it easier to read) */
-  .schedule-table td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    color: #f13a11;
-    padding-right: 0.5rem;
-  }
-}
-
-
-/* General Contact Section Styles */
+/* Conatct */
 .contact_section {
   padding: 112px 20px; /* Add side padding for smaller screens */
   /* background-color: #f9f9f9; Optional: Light background for better visibility */
@@ -1268,7 +1273,7 @@ table {
 }
 
 
-/* Map Section */
+/* Map */
 .m_section {
   border-bottom: 1px solid #efebeb;
   padding-bottom: 80px;
@@ -1325,7 +1330,24 @@ table {
     flex-wrap: nowrap; /* Prevent wrapping on medium screens and up */
   }
 
-.f_contact {
-  display: flex;
-  justify-content: space-between;
+  .f_contact {
+    flex-direction: row; /* Align items horizontally */
+    justify-content: center;
+    gap: 35px;
+  }
+
+  .inner_footer > div {
+    text-align: left; /* Align text to the left for larger screens */
+  }
 }
+
+@media (min-width: 1024px) {
+  .main_footer {
+    padding: 50px 50px; /* Increased padding for larger screens */
+  }
+
+  .inner_footer {
+    gap: 40px; /* Add more spacing between sections */
+  }
+}
+
